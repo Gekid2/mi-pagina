@@ -2,9 +2,75 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Historias</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor {
+            border: 2px solid #333;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .caja-principal {
+            border: 2px solid #333;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            background-color: #fafafa;
+        }
+        .caja-principal h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .contenedor-caps {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .caja-cap {
+            border: 2px solid #333;
+            padding: 10px 15px;
+            text-align: center;
+            flex: 1;
+            border-radius: 6px;
+            background-color: #fafafa;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .caja-cap:hover {
+            background-color: #eaeaea;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola mundo! Mi página en GitHub Pages ya está funcionando.</h1>
+
+    <div class="contenedor">
+        <!-- Caja superior: Nuevo Capítulo -->
+        <div class="caja-principal">
+            <h2>NUEVO CAPÍTULO</h2>
+        </div>
+
+        <!-- Cajas inferiores: Capítulos -->
+        <div class="contenedor-caps">
+            <div class="caja-cap">Cap 1</div>
+            <div class="caja-cap">Cap 2</div>
+            <div class="caja-cap">Cap 3</div>
+        </div>
+    </div>
+
 </body>
 </html>
